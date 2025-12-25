@@ -1,0 +1,253 @@
+text,intent
+hi,greeting
+hello,greeting
+hai,greeting
+hey,greeting
+hii,greeting
+hello there,greeting
+good morning,greeting
+good evening,greeting
+good afternoon,greeting
+how are you,greeting
+how r u,greeting
+hey bot,greeting
+hello bot,greeting
+
+stress relief yoga,stress_relief
+yoga for stress,stress_relief
+stress yoga,stress_relief
+stress relief,stress_relief
+reduce stress with yoga,stress_relief
+feeling stressed,stress_relief
+stress reduction yoga,stress_relief
+calm mind yoga,stress_relief
+yoga to relax mind,stress_relief
+anxiety stress yoga,stress_relief
+mental stress yoga,stress_relief
+stress control yoga,stress_relief
+relaxation yoga for stress,stress_relief
+daily stress yoga,stress_relief
+stress relief exercises,stress_relief
+yoga for tension,stress_relief
+mind relaxation yoga,stress_relief
+overthinking stress yoga,stress_relief
+work stress yoga,stress_relief
+stress relief poses,stress_relief
+stress relief exercises yoga,stress_relief
+stress relief asanas,stress_relief
+stress relief practice yoga,stress_relief
+stress free yoga routine,stress_relief
+yoga to reduce mental stress,stress_relief
+stress relaxation yoga poses,stress_relief
+office stress yoga,stress_relief
+stress relief breathing yoga,stress_relief
+stress management yoga,stress_relief
+calming yoga for stress relief,stress_relief
+
+sun salutation,sun_salutation
+surya namaskar,sun_salutation
+sun salutation yoga,sun_salutation
+morning sun salutation,sun_salutation
+surya namaskar steps,sun_salutation
+sun salutation routine,sun_salutation
+sun salutation for beginners,sun_salutation
+sun salutation sequence,sun_salutation
+how to do sun salutation,sun_salutation
+sun salutation poses,sun_salutation
+morning yoga sun salutation,sun_salutation
+daily sun salutation,sun_salutation
+
+beginner yoga,beginner_yoga
+beginner friendly yoga,beginner_yoga
+yoga basics for beginners,beginner_yoga
+yoga starting guide,beginner_yoga
+learn yoga from scratch,beginner_yoga
+beginner yoga training,beginner_yoga
+simple yoga routine for beginners,beginner_yoga
+home yoga for beginners,beginner_yoga
+beginner yoga daily routine,beginner_yoga
+easy yoga practice,beginner_yoga
+basic yoga training,beginner_yoga
+yoga for beginners,beginner_yoga
+beginner yoga poses,beginner_yoga
+basic yoga,beginner_yoga
+basic yoga poses,beginner_yoga
+yoga beginner,beginner_yoga
+i am new to yoga,beginner_yoga
+new to yoga,beginner_yoga
+start yoga,beginner_yoga
+start yoga as beginner,beginner_yoga
+begin yoga at home,beginner_yoga
+easy yoga for beginners,beginner_yoga
+beginner yoga routine,beginner_yoga
+simple yoga poses,beginner_yoga
+first time yoga,beginner_yoga
+beginner yoga exercises,beginner_yoga
+learning yoga basics,beginner_yoga
+yoga for starters,beginner_yoga
+begin yoga practice,beginner_yoga
+introductory yoga,beginner_yoga
+
+kids yoga,kids_yoga
+yoga for kids,kids_yoga
+yoga for children,kids_yoga
+fun yoga for kids,kids_yoga
+kids yoga poses,kids_yoga
+children yoga exercises,kids_yoga
+kids yoga routine,kids_yoga
+playful yoga for kids,kids_yoga
+animal yoga for kids,kids_yoga
+school kids yoga,kids_yoga
+yoga for small children,kids_yoga
+kids morning yoga,kids_yoga
+kids relaxation yoga,kids_yoga
+kids flexibility yoga,kids_yoga
+
+weight loss yoga,weight_loss
+yoga to lose weight,weight_loss
+weight loss through yoga,weight_loss
+fat burn yoga,weight_loss
+burn calories yoga,weight_loss
+yoga for fat loss,weight_loss
+weight reduction yoga,weight_loss
+yoga for belly fat,weight_loss
+yoga to reduce weight,weight_loss
+slimming yoga,weight_loss
+weight loss exercises yoga,weight_loss
+daily yoga for weight loss,weight_loss
+weight loss routine yoga,weight_loss
+yoga for obesity,weight_loss
+yoga for fitness weight loss,weight_loss
+
+pranayama,breathing_pranayama
+breathing exercises,breathing_pranayama
+pranayama yoga,breathing_pranayama
+breathing yoga,breathing_pranayama
+deep breathing yoga,breathing_pranayama
+breathing techniques,breathing_pranayama
+breathing control yoga,breathing_pranayama
+anulom vilom,breathing_pranayama
+kapalbhati,breathing_pranayama
+yogic breathing,breathing_pranayama
+breath control exercises,breathing_pranayama
+breathing practice yoga,breathing_pranayama
+pranayama for beginners,breathing_pranayama
+simple breathing exercises,breathing_pranayama
+daily pranayama,breathing_pranayama
+
+sleep yoga,sleep_relaxation
+yoga for sleep,sleep_relaxation
+sleep relaxation yoga,sleep_relaxation
+yoga to sleep better,sleep_relaxation
+night yoga,sleep_relaxation
+bedtime yoga,sleep_relaxation
+relaxation yoga,sleep_relaxation
+sleep relaxation yoga poses,sleep_relaxation
+sleep calming yoga,sleep_relaxation
+night relaxation yoga,sleep_relaxation
+yoga to calm mind before sleep,sleep_relaxation
+deep relaxation yoga for sleep,sleep_relaxation
+sleep improvement yoga routine,sleep_relaxation
+sleep disorder yoga,sleep_relaxation
+peaceful sleep yoga,sleep_relaxation
+sleep recovery yoga,sleep_relaxation
+bedtime relaxation yoga,sleep_relaxation
+deep sleep yoga,sleep_relaxation
+insomnia yoga,sleep_relaxation
+sleep improving yoga,sleep_relaxation
+calming yoga for sleep,sleep_relaxation
+yoga before sleep,sleep_relaxation
+yoga for insomnia,sleep_relaxation
+relaxing yoga poses,sleep_relaxation
+sleep meditation yoga,sleep_relaxation
+
+flexibility yoga,flexibility_yoga
+yoga for flexibility,flexibility_yoga
+increase flexibility yoga,flexibility_yoga
+stretching yoga,flexibility_yoga
+yoga to become flexible,flexibility_yoga
+flexible body yoga,flexibility_yoga
+yoga for stiffness,flexibility_yoga
+flexibility exercises yoga,flexibility_yoga
+daily flexibility yoga,flexibility_yoga
+improve flexibility yoga,flexibility_yoga
+tight muscles yoga,flexibility_yoga
+yoga stretches,flexibility_yoga
+flexibility poses yoga,flexibility_yoga
+stretching exercises yoga,flexibility_yoga
+
+strength yoga,strength_yoga
+yoga for strength,strength_yoga
+build strength yoga,strength_yoga
+muscle strength yoga,strength_yoga
+power yoga,strength_yoga
+yoga for muscle building,strength_yoga
+strength training yoga,strength_yoga
+strong body yoga,strength_yoga
+yoga for core strength,strength_yoga
+arm strength yoga,strength_yoga
+leg strength yoga,strength_yoga
+strength yoga poses,strength_yoga
+body strength yoga,strength_yoga
+
+meditation,meditation_mindfulness
+yoga meditation,meditation_mindfulness
+mindfulness yoga,meditation_mindfulness
+meditation for peace,meditation_mindfulness
+guided meditation yoga,meditation_mindfulness
+mental peace yoga,meditation_mindfulness
+mind calming meditation,meditation_mindfulness
+yoga for mindfulness,meditation_mindfulness
+meditation practice yoga,meditation_mindfulness
+relaxation meditation yoga,meditation_mindfulness
+focus meditation yoga,meditation_mindfulness
+breathing meditation yoga,meditation_mindfulness
+
+benefits of yoga,yoga_benefits
+yoga benefits,yoga_benefits
+why yoga is good,yoga_benefits
+importance of yoga,yoga_benefits
+advantages of yoga,yoga_benefits
+health benefits of yoga,yoga_benefits
+mental benefits of yoga,yoga_benefits
+physical benefits of yoga,yoga_benefits
+yoga for health benefits,yoga_benefits
+yoga daily benefits,yoga_benefits
+
+pose correction yoga,pose_correction
+correct yoga posture,pose_correction
+yoga pose correction,pose_correction
+improve yoga posture,pose_correction
+wrong yoga posture,pose_correction
+correct my yoga pose,pose_correction
+yoga alignment help,pose_correction
+pose accuracy yoga,pose_correction
+how to correct yoga pose,pose_correction
+safe yoga posture,pose_correction
+
+women yoga,women_health_yoga
+women health yoga,women_health_yoga
+yoga for women,women_health_yoga
+female yoga health,women_health_yoga
+yoga during periods,women_health_yoga
+menstrual yoga,women_health_yoga
+yoga for hormonal balance,women_health_yoga
+women wellness yoga,women_health_yoga
+yoga for girls,women_health_yoga
+women body yoga,women_health_yoga
+
+what is blockchain,fallback
+java code,fallback
+python program,fallback
+movie suggestions,fallback
+weather today,fallback
+tell me a joke,fallback
+news today,fallback
+cricket score,fallback
+stock market,fallback
+who is virat kohli,fallback
+ai definition,fallback
+java tutorial,fallback
+python loops,fallback
+random question,fallback
+technology news,fallback

@@ -1,0 +1,106 @@
+{
+  "stress_relief": {
+    "poses": ["Child’s Pose", "Cat-Cow", "Legs Up the Wall", "Easy Pose"],
+    "breathing": ["Anulom Vilom", "4-7-8 Breathing", "Box Breathing"],
+    "tips": ["Move slowly", "Focus on long exhalations", "Close your eyes"],
+    "benefits": ["Reduces cortisol", "Calms nervous system", "Emotional balance"],
+    "duration": "10–15 minutes",
+    "best_time": "Evening or before sleep"
+  },
+  "sun_salutation": {
+    "poses": ["Prayer Pose", "Raised Arms", "Forward Fold", "Lunge", "Plank", "Cobra", "Downward Dog"],
+    "breathing": ["Inhale on expansion", "Exhale on contraction"],
+    "tips": ["Coordinate breath with movement", "Start slowly"],
+    "benefits": ["Full body strength", "Boosts metabolism", "Flexibility"],
+    "duration": "5–10 rounds",
+    "best_time": "Sunrise on empty stomach"
+  },
+  "beginner_yoga": {
+    "poses": ["Mountain Pose", "Tree Pose", "Cobra Pose", "Child's Pose"],
+    "breathing": ["Natural Diaphragmatic Breathing"],
+    "tips": ["No pain, just stretch", "Use a yoga mat", "Be consistent"],
+    "benefits": ["Body awareness", "Better posture", "Flexibility"],
+    "duration": "15–20 minutes",
+    "best_time": "Morning or Evening"
+  },
+  "kids_yoga": {
+    "poses": ["Lion Pose (Roar!)", "Butterfly Pose", "Airplane Pose"],
+    "breathing": ["Bunny Breath (sniff sniff out)"],
+    "tips": ["Make it a game", "Use animal names", "Keep it short"],
+    "benefits": ["Focus", "Balance", "Emotional regulation"],
+    "duration": "5-10 minutes",
+    "best_time": "After school"
+  },
+  "weight_loss": {
+    "poses": ["Boat Pose", "Warrior I & II", "Plank Pose", "Chair Pose"],
+    "breathing": ["Kapalabhati (Skull Shining)"],
+    "tips": ["Keep the pace high", "Engage your core"],
+    "benefits": ["Calorie burn", "Metabolism boost", "Muscle tone"],
+    "duration": "30-45 minutes",
+    "best_time": "Morning empty stomach"
+  },
+  "breathing_pranayama": {
+    "poses": ["Easy Pose (Sukhasana)"],
+    "breathing": ["Nadi Shodhana", "Bhramari", "Kapalabhati"],
+    "tips": ["Keep spine straight", "Relax shoulders"],
+    "benefits": ["Lung capacity", "Mental clarity", "Stress reduction"],
+    "duration": "10 minutes",
+    "best_time": "Anytime (empty stomach preferred)"
+  },
+  "sleep_relaxation": {
+    "poses": ["Corpse Pose (Savasana)", "Reclined Butterfly", "Legs Up Wall"],
+    "breathing": ["Deep Belly Breathing"],
+    "tips": ["Dim lights", "No screens", "Stay warm"],
+    "benefits": ["Insomnia relief", "Deep rest", "Recovery"],
+    "duration": "15 minutes",
+    "best_time": "Immediately before bed"
+  },
+  "diet_nutrition": {
+    "poses": [],
+    "breathing": [],
+    "tips": ["Eat light 2 hours before yoga", "Stay hydrated", "Avoid heavy, oily foods", "Eat more fruits and greens"],
+    "benefits": ["Better energy", "Lighter body", "Improved digestion"],
+    "duration": "Daily habit",
+    "best_time": "Always"
+  },
+  "women_health": {
+    "poses": ["Bound Angle Pose", "Cat-Cow", "Child's Pose"],
+    "breathing": ["Deep calming breaths"],
+    "tips": ["Listen to your body", "Avoid inversions during cycle if uncomfortable", "Use props for support"],
+    "benefits": ["Hormonal balance", "Reduces cramps", "Emotional stability"],
+    "duration": "15-20 minutes",
+    "best_time": "Morning or Evening"
+  },
+  "full_body_workout": {
+    "poses": ["Warrior Sequence", "Triangle Pose", "Plank", "Bridge Pose"],
+    "breathing": ["Ujjayi Breath (Ocean Breath)"],
+    "tips": ["Engage all muscle groups", "Hold poses for 5-10 breaths"],
+    "benefits": ["Total body strength", "Stamina", "Toning"],
+    "duration": "30-40 minutes",
+    "best_time": "Morning"
+  },
+  "benefits_yoga": {
+    "poses": [],
+    "breathing": [],
+    "tips": ["Yoga unites mind, body, and breath", "Consistency is key"],
+    "benefits": ["Stress reduction", "Flexibility", "Strength", "Immunity boost", "Better sleep"],
+    "duration": "Lifetime practice",
+    "best_time": "Anytime"
+  },
+  "yoga_poses": {
+     "poses": ["Depends on your goal (Strength vs Flexibility)"],
+     "breathing": ["Coordinate with movement"],
+     "tips": ["Ensure proper alignment", "Don't lock your joints", "Breathe through the nose"],
+     "benefits": ["Targeted muscle work", "Joint health"],
+     "duration": "Varies",
+     "best_time": "Varies"
+  },
+  "pose_correction": {
+      "poses": [],
+      "breathing": [],
+      "tips": ["Use a mirror to check alignment", "Record yourself on video", "Don't push into pain"],
+      "benefits": ["Prevents injury", "Maximizes results"],
+      "duration": "During practice",
+      "best_time": "Always"
+  }
+}
