@@ -3,3 +3,4 @@ flask-cors
 scikit-learn
 gunicorn
 numpy
+google-generativeai

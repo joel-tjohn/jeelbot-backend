@@ -42,77 +42,569 @@ start chat,greeting
 initiate,greeting
 wake up,greeting
 are you there,greeting
-
+stress,stress_relief
+feeling stress,stress_relief
 stress relief yoga,stress_relief
 yoga for stress,stress_relief
 stress yoga,stress_relief
-stress relief,stress_relief
-reduce stress with yoga,stress_relief
-feeling stressed,stress_relief
-stress reduction yoga,stress_relief
-calm mind yoga,stress_relief
-yoga to relax mind,stress_relief
-anxiety stress yoga,stress_relief
-mental stress yoga,stress_relief
-stress control yoga,stress_relief
-relaxation yoga for stress,stress_relief
-daily stress yoga,stress_relief
+reduce stress,stress_relief
+relax mind,stress_relief
+calm mind,stress_relief
+mental stress,stress_relief
+work stress,stress_relief
+office stress,stress_relief
+too much stress,stress_relief
+high stress levels,stress_relief
+daily stress,stress_relief
+stress problems,stress_relief
+stress control,stress_reliefy
+stress management,stress_relief
 stress relief exercises,stress_relief
-yoga for tension,stress_relief
-mind relaxation yoga,stress_relief
-overthinking stress yoga,stress_relief
-work stress yoga,stress_relief
-stress relief poses,stress_relief
-stress relief exercises yoga,stress_relief
-stress relief asanas,stress_relief
-stress relief practice yoga,stress_relief
-stress free yoga routine,stress_relief
-yoga to reduce mental stress,stress_relief
-stress relaxation yoga poses,stress_relief
-office stress yoga,stress_relief
-stress relief breathing yoga,stress_relief
-stress management yoga,stress_relief
-calming yoga for stress relief,stress_relief
-i am feeling very stressed,stress_relief
-yoga to calm down,stress_relief
-i have anxiety and stress,stress_relief
-reduce my tension,stress_relief
-relax my mind please,stress_relief
-too much pressure at work yoga,stress_relief
-stress busting yoga,stress_relief
-exercises for mental peace,stress_relief
-calm mental storm yoga,stress_relief
-yoga for panic attacks,stress_relief
-i need to chill out,stress_relief
-de-stress routine,stress_relief
-anti-stress yoga,stress_relief
-yoga to clear my head,stress_relief
-my mind is racing yoga,stress_relief
-relieve mental exhaustion,stress_relief
-burnout recovery yoga,stress_relief
-tension headache yoga,stress_relief
-soothe nervous system yoga,stress_relief
-gentle flow for stress,stress_relief
-emotional balance yoga,stress_relief
-anxiety relief poses,stress_relief
-calmness exercises,stress_relief
-relaxing evening flow,stress_relief
-quick stress relief,stress_relief
-5 min stress yoga,stress_relief
-10 min calming yoga,stress_relief
-yoga for depression and stress,stress_relief
-mind body relaxation,stress_relief
-restorative yoga for stress,stress_relief
-how to relax with yoga,stress_relief
-peaceful mind yoga,stress_relief
-release negative energy yoga,stress_relief
-quiet mind yoga,stress_relief
-stress management techniques,stress_relief
-coping with stress yoga,stress_relief
-mental health yoga,stress_relief
-relax after work,stress_relief
-heavy head yoga,stress_relief
-frustrated need yoga,stress_relief
+stress relief routine,stress_relief
+stress free yoga,stress_relief
+stress free mind,stress_relief
+stress reduction yoga,stress_relief
+stress calming yoga,stress_relief
+stress relief practice,stress_relief
+stress relief breathing,stress_relief
+stress relief pranayama,stress_relief
+stress relief meditation,stress_relief
+stress relief stretches,stress_relief
+stress relief techniques,stress_relief
+stress relief session,stress_relief
+stress relief flow,stress_relief
+stress relief therapy yoga,stress_relief
+stress relief for beginners,stress_relief
+stress relief at home,stress_relief
+stress relief after work,stress_relief
+stress relief at night,stress_relief
+stress relief in morning,stress_relief
+stress relief calm yoga,stress_relief
+stress relief gentle yoga,stress_relief
+stress relief slow yoga,stress_relief
+stress relief deep relaxation,stress_relief
+stress relief mental peace,stress_relief
+stress relief emotional calm,stress_relief
+stress relief nervous system,stress_relief
+stress relief tension release,stress_relief
+stress relief burnout recovery,stress_relief
+stress relief emotional balance,stress_relief
+stress relief mental clarity,stress_relief
+stress relief peace of mind,stress_relief
+stress relief soothing yoga,stress_relief
+stress relief mindfulness yoga,stress_relief
+stress relief body relaxation,stress_relief
+stress relief mind relaxation,stress_relief
+stress relief calm breathing,stress_relief
+stress relief slow breathing,stress_relief
+stress relief pranayama practice,stress_relief
+stress relief anxiety calm,stress_relief
+stress relief panic calm,stress_relief
+stress relief overthinking,stress_relief
+stress relief racing thoughts,stress_relief
+stress relief mental exhaustion,stress_relief
+stress relief heavy head,stress_relief
+stress relief headache relief,stress_relief
+stress relief mental load,stress_relief
+stress relief emotional release,stress_relief
+stress relief inner peace,stress_relief
+stress relief quiet mind,stress_relief
+stress relief mental rest,stress_relief
+stress relief body mind connection,stress_relief
+stress relief deep calm,stress_relief
+stress relief relaxation flow,stress_relief
+stress relief restorative yoga,stress_relief
+stress relief yin yoga,stress_relief
+stress relief slow flow yoga,stress_relief
+stress relief evening yoga,stress_relief
+stress relief night routine,stress_relief
+stress relief quick yoga,stress_relief
+stress relief 5 minute yoga,stress_relief
+stress relief 10 minute yoga,stress_relief
+stress relief gentle stretches,stress_relief
+stress relief breathing exercises,stress_relief
+stress relief calming poses,stress_relief
+stress relief seated yoga,stress_relief
+stress relief lying down yoga,stress_relief
+stress relief floor poses,stress_relief
+stress relief chair yoga,stress_relief
+stress relief desk yoga,stress_relief
+stress relief office yoga,stress_relief
+stress relief home practice,stress_relief
+stress relief daily routine,stress_relief
+stress relief beginner yoga,stress_relief
+stress relief advanced relaxation,stress_relief
+stress relief slow movement,stress_relief
+stress relief mindful movement,stress_relief
+stress relief breath awareness,stress_relief
+stress relief body scan yoga,stress_relief
+stress relief calming routine,stress_relief
+stress relief soothing flow,stress_relief
+stress relief stress release yoga,stress_relief
+stress relief tension melt yoga,stress_relief
+stress relief nervous calm yoga,stress_relief
+stress relief emotional healing yoga,stress_relief
+stress relief mind detox yoga,stress_relief
+stress relief calm energy yoga,stress_relief
+stress relief grounding yoga,stress_relief
+stress relief balancing yoga,stress_relief
+stress relief slow stretch yoga,stress_relief
+stress relief peace yoga,stress_relief
+stress relief calm down yoga,stress_relief
+stress relief unwind yoga,stress_relief
+stress relief let go yoga,stress_relief
+stress relief release tension yoga,stress_relief
+stress relief mental refresh yoga,stress_relief
+stress relief mind cooling yoga,stress_relief
+stress relief emotional calm yoga,stress_relief
+stress relief full body relax,stress_relief
+stress relief soft yoga flow,stress_relief
+stress relief calming sequence,stress_relief
+stress relief relaxing sequence,stress_relief
+stress relief body calm yoga,stress_relief
+stress relief mental calm yoga,stress_relief
+stress relief peaceful yoga,stress_relief
+stress relief serenity yoga,stress_relief
+stress relief stillness yoga,stress_relief
+stress relief surrender yoga,stress_relief
+stress relief gentle relaxation,stress_relief
+stress relief deep rest yoga,stress_relief
+stress relief nervous reset yoga,stress_relief
+stress relief parasympathetic yoga,stress_relief
+stress relief calm response yoga,stress_relief
+stress relief breath focused yoga,stress_relief
+stress relief slow paced yoga,stress_relief
+stress relief calming stretch,stress_relief
+stress relief mind body relax,stress_relief
+stress relief soft stretching yoga,stress_relief
+stress relief peaceful breathing,stress_relief
+stress relief calm energy release,stress_relief
+stress relief emotional soothing,stress_relief
+stress relief mental soothing yoga,stress_relief
+stress relief fatigue relief yoga,stress_relief
+stress relief emotional detox yoga,stress_relief
+stress relief inner calm yoga,stress_relief
+stress relief mind quiet yoga,stress_relief
+stress relief stress dissolve yoga,stress_relief
+stress relief calming breathwork,stress_relief
+stress relief slow restorative yoga,stress_relief
+stress relief grounding breath yoga,stress_relief
+stress relief calming evening yoga,stress_relief
+stress relief relaxing night yoga,stress_relief
+stress relief decompress yoga,stress_relief
+stress relief unwind after work yoga,stress_relief
+stress relief reset mind yoga,stress_relief
+stress relief release pressure yoga,stress_relief
+stress relief emotional ease yoga,stress_relief
+stress relief calm focus yoga,stress_relief
+stress relief peaceful flow yoga,stress_relief
+i am stressed,stress_relief
+i feel stressed,stress_relief
+feeling very stressed,stress_relief
+i am under stress,stress_relief
+stress is killing me,stress_relief
+too much stress today,stress_relief
+my stress level is high,stress_relief
+i am mentally stressed,stress_relief
+stress due to work,stress_relief
+stress because of job,stress_relief
+stress from office work,stress_relief
+stress from studies,stress_relief
+stress from exams,stress_relief
+stress from deadlines,stress_relief
+stress from pressure,stress_relief
+stress from responsibilities,stress_relief
+stress from life,stress_relief
+life stress is too much,stress_relief
+mental stress is high,stress_relief
+emotional stress today,stress_relief
+physical and mental stress,stress_relief
+stress and tension,stress_relief
+stress and anxiety,stress_relief
+stress and overthinking,stress_relief
+stress and panic,stress_relief
+stress and fear,stress_relief
+stress and burnout,stress_relief
+stress and frustration,stress_relief
+stress and irritation,stress_relief
+stress and anger,stress_relief
+stress and sadness,stress_relief
+stress and depression,stress_relief
+stress and mental fatigue,stress_relief
+stress and tired mind,stress_relief
+stress and heavy head,stress_relief
+stress and sleeplessness,stress_relief
+stress and restlessness,stress_relief
+stress and racing thoughts,stress_relief
+stress and nervousness,stress_relief
+stress and emotional pain,stress_relief
+stress and brain fog,stress_relief
+stress and lack of focus,stress_relief
+stress and tension headache,stress_relief
+stress and body tightness,stress_relief
+stress and stiff shoulders,stress_relief
+stress and neck pain,stress_relief
+stress and chest tightness,stress_relief
+stress and breathing issues,stress_relief
+stress and shallow breathing,stress_relief
+stress and fast heartbeat,stress_relief
+stress and uneasiness,stress_relief
+stress and discomfort,stress_relief
+stress and overwhelm,stress_relief
+stress and burnout feeling,stress_relief
+stress and mental overload,stress_relief
+stress and emotional overload,stress_relief
+stress relief needed,stress_relief
+i need stress relief,stress_relief
+help me reduce stress,stress_relief
+help me manage stress,stress_relief
+help me calm stress,stress_relief
+how to reduce stress,stress_relief
+how to calm stress,stress_relief
+how to handle stress,stress_relief
+how to relax stress,stress_relief
+how to control stress,stress_relief
+how to release stress,stress_relief
+how to manage work stress,stress_relief
+how to handle office stress,stress_relief
+how to calm mental stress,stress_relief
+how to relax mind stress,stress_relief
+how to reduce emotional stress,stress_relief
+how to calm anxiety stress,stress_relief
+how to relax after stressful day,stress_relief
+how to unwind from stress,stress_relief
+how to feel calm again,stress_relief
+how to clear stress from mind,stress_relief
+how to release mental tension,stress_relief
+how to calm nervous system,stress_relief
+how to reduce mental pressure,stress_relief
+how to feel peaceful again,stress_relief
+how to relax body and mind,stress_relief
+how to reduce stress naturally,stress_relief
+how to calm stress with yoga,stress_relief
+how to reduce stress using yoga,stress_relief
+how to relax mind using yoga,stress_relief
+how to calm anxiety with yoga,stress_relief
+how to release tension with yoga,stress_relief
+how to unwind using yoga,stress_relief
+how to relax after work yoga,stress_relief
+how to calm down with yoga,stress_relief
+how to de stress with yoga,stress_relief
+how to reduce burnout yoga,stress_relief
+how to calm racing thoughts yoga,stress_relief
+how to relax before sleep yoga,stress_relief
+how to calm mind at night yoga,stress_relief
+how to relax in evening yoga,stress_relief
+how to manage daily stress yoga,stress_relief
+how to handle emotional stress yoga,stress_relief
+how to relax nervous system yoga,stress_relief
+how to feel calm yoga practice,stress_relief
+i feel anxious and stressed,stress_relief
+i feel overwhelmed and stressed,stress_relief
+i feel mentally exhausted,stress_relief
+i feel emotionally drained,stress_relief
+i feel burned out,stress_relief
+i feel pressure in my head,stress_relief
+i feel tension in my body,stress_relief
+i feel tightness in chest,stress_relief
+i feel restless and stressed,stress_relief
+i feel uneasy and stressed,stress_relief
+i feel mentally tired,stress_relief
+i feel mentally overloaded,stress_relief
+i feel mentally blocked,stress_relief
+i feel mentally heavy,stress_relief
+i feel emotionally tired,stress_relief
+i feel emotionally stressed,stress_relief
+i feel emotionally unstable,stress_relief
+i feel emotionally overwhelmed,stress_relief
+i feel mentally cluttered,stress_relief
+i feel mentally chaotic,stress_relief
+i feel mentally tense,stress_relief
+i feel nervous and stressed,stress_relief
+i feel anxious and tense,stress_relief
+i feel panicky and stressed,stress_relief
+i feel worried and stressed,stress_relief
+i feel restless mind,stress_relief
+i feel racing thoughts,stress_relief
+i feel unable to relax,stress_relief
+i feel unable to calm down,stress_relief
+i feel unable to focus due to stress,stress_relief
+i feel stressed and need calm,stress_relief
+i feel stressed please help,stress_relief
+i feel stress building up,stress_relief
+i feel pressure building up,stress_relief
+i feel stress in my head,stress_relief
+i feel stress in my body,stress_relief
+i feel stress in my chest,stress_relief
+i feel stress in my shoulders,stress_relief
+i feel stress in my neck,stress_relief
+i feel stress everywhere,stress_relief
+i feel stress and tension inside,stress_relief
+i feel stress emotionally,stress_relief
+i feel stress mentally,stress_relief
+i feel stress physically,stress_relief
+i feel stress nonstop,stress_relief
+i feel stress constantly,stress_relief
+i feel stress all day,stress_relief
+i feel stress every day,stress_relief
+i feel stress after work,stress_relief
+i feel stress at night,stress_relief
+i feel stress in the morning,stress_relief
+i feel stress before sleep,stress_relief
+i feel stress while working,stress_relief
+i feel stress while studying,stress_relief
+i feel stress while thinking,stress_relief
+i feel stress while resting,stress_relief
+i feel stress for no reason,stress_relief
+i feel stress for long time,stress_relief
+i feel stress inside my mind,stress_relief
+i feel stress deep inside,stress_relief
+i feel stress emotionally heavy,stress_relief
+i feel stress mentally tired,stress_relief
+i feel stress mentally drained,stress_relief
+i feel stress emotionally drained,stress_relief
+i feel stress physically tired,stress_relief
+i feel stress mentally overwhelmed,stress_relief
+i feel stress emotionally overwhelmed,stress_relief
+i feel stress mentally cluttered,stress_relief
+i feel stress mentally restless,stress_relief
+need stress relief,stress_relief
+need to relax,stress_relief
+need mental peace,stress_relief
+need calm mind,stress_relief
+need to calm down,stress_relief
+need to de stress,stress_relief
+need to unwind,stress_relief
+need to chill,stress_relief
+need to relax mind,stress_relief
+need emotional relief,stress_relief
+need mental relaxation,stress_relief
+need stress release,stress_relief
+need calm breathing,stress_relief
+need nervous calm,stress_relief
+need mental rest,stress_relief
+need inner peace,stress_relief
+need emotional calm,stress_relief
+need peace of mind,stress_relief
+need to release tension,stress_relief
+need to relax body and mind,stress_relief
+need stress management,stress_relief
+need burnout relief,stress_relief
+need anxiety relief,stress_relief
+need overthinking relief,stress_relief
+need panic relief,stress_relief
+need pressure relief,stress_relief
+need head pressure relief,stress_relief
+need emotional balance,stress_relief
+need mental clarity,stress_relief
+need calm energy,stress_relief
+need grounding,stress_relief
+need relaxation routine,stress_relief
+need soothing yoga,stress_relief
+need gentle yoga,stress_relief
+need slow yoga,stress_relief
+need restorative yoga,stress_relief
+need relaxing flow,stress_relief
+need calming poses,stress_relief
+need breathing exercises,stress_relief
+need pranayama for stress,stress_relief
+need meditation for stress,stress_relief
+need stress relief yoga now,stress_relief
+need quick stress relief,stress_relief
+need instant relaxation,stress_relief
+need fast stress relief,stress_relief
+need evening relaxation,stress_relief
+need night relaxation,stress_relief
+need after work relaxation,stress_relief
+need morning calm routine,stress_relief
+need daily stress relief,stress_relief
+need mental detox,stress_relief
+need mind reset,stress_relief
+need emotional detox,stress_relief
+need mind cooling,stress_relief
+need nervous system reset,stress_relief
+need parasympathetic activation,stress_relief
+need calm focus,stress_relief
+need peaceful feeling,stress_relief
+need silence in mind,stress_relief
+need quiet mind,stress_relief
+need stillness,stress_relief
+need surrender,stress_relief
+need deep rest,stress_relief
+need body relaxation,stress_relief
+need full body relax,stress_relief
+need shoulder tension relief,stress_relief
+need neck tension relief,stress_relief
+need chest tension relief,stress_relief
+need head tension relief,stress_relief
+need muscle relaxation,stress_relief
+need emotional soothing,stress_relief
+need mental soothing,stress_relief
+need comfort,stress_relief
+need calm vibes,stress_relief
+need peaceful yoga,stress_relief
+need stress free feeling,stress_relief
+need relaxation badly,stress_relief
+need calm badly,stress_relief
+need relief badly,stress_relief
+need help calming down,stress_relief
+need help relaxing,stress_relief
+need help managing stress,stress_relief
+need help with stress,stress_relief
+need help with anxiety and stress,stress_relief
+need help with burnout,stress_relief
+need help with overthinking,stress_relief
+need help with mental pressure,stress_relief
+need help with emotional stress,stress_relief
+need help calming my mind,stress_relief
+need help relaxing my body,stress_relief
+need help feeling calm,stress_relief
+need help unwinding,stress_relief
+need help releasing tension,stress_relief
+need help finding peace,stress_relief
+need help calming nerves,stress_relief
+need help mental rest,stress_relief
+need help stress relief yoga,stress_relief
+need yoga for stress relief,stress_relief
+need yoga to relax mind,stress_relief
+need yoga for calmness,stress_relief
+need yoga for anxiety stress,stress_relief
+need yoga for burnout,stress_relief
+need yoga for overthinking,stress_relief
+need yoga for panic,stress_relief
+need yoga for mental peace,stress_relief
+need yoga for emotional calm,stress_relief
+need yoga for nervous system,stress_relief
+need yoga for relaxation,stress_relief
+need yoga for tension release,stress_relief
+need yoga for pressure relief,stress_relief
+need yoga after stressful day,stress_relief
+need yoga before sleep,stress_relief
+need yoga in evening,stress_relief
+need yoga at night,stress_relief
+need yoga at home,stress_relief
+need yoga now,stress_relief
+need calming exercises,stress_relief
+need relaxation exercises,stress_relief
+need breathing to calm down,stress_relief
+need slow breathing,stress_relief
+need deep breathing,stress_relief
+need mindful breathing,stress_relief
+need calm breathing now,stress_relief
+need relaxation now,stress_relief
+need peace now,stress_relief
+need calm now,stress_relief
+need relief now,stress_relief
+need stress gone,stress_relief
+need stress reduced,stress_relief
+need stress to stop,stress_relief
+need stress under control,stress_relief
+need stress managed,stress_relief
+need stress off my mind,stress_relief
+need stress out of my body,stress_relief
+need stress released,stress_relief
+need stress melted away,stress_relief
+need stress dissolved,stress_relief
+need stress gone asap,stress_relief
+need stress relief urgently,stress_relief
+need stress relief immediately,stress_relief
+my mind is stressed,stress_relief
+my head feels heavy,stress_relief
+my brain feels tired,stress_relief
+my thoughts are racing,stress_relief
+my mind needs rest,stress_relief
+my body feels tense,stress_relief
+my shoulders are tight,stress_relief
+my neck feels stiff from stress,stress_relief
+my chest feels tight,stress_relief
+my breathing feels shallow,stress_relief
+my heart feels restless,stress_relief
+my nerves feel stressed,stress_relief
+my emotions feel heavy,stress_relief
+my mind feels cluttered,stress_relief
+my thoughts feel chaotic,stress_relief
+my stress is overwhelming,stress_relief
+my stress is uncontrollable,stress_relief
+my stress is affecting me,stress_relief
+my stress is too much today,stress_relief
+my stress level is extreme,stress_relief
+my stress is nonstop,stress_relief
+my stress is draining me,stress_relief
+my stress is exhausting,stress_relief
+my stress is burning me out,stress_relief
+my stress is affecting my sleep,stress_relief
+my stress is affecting my focus,stress_relief
+my stress is affecting my mood,stress_relief
+my stress is affecting my body,stress_relief
+my stress is affecting my mind,stress_relief
+my stress feels unbearable,stress_relief
+my stress feels heavy,stress_relief
+my stress feels stuck,stress_relief
+my stress feels trapped inside,stress_relief
+my stress feels constant,stress_relief
+my stress feels endless,stress_relief
+my stress feels intense,stress_relief
+my stress feels emotional,stress_relief
+my stress feels mental,stress_relief
+my stress feels physical,stress_relief
+my stress feels overwhelming right now,stress_relief
+i cant relax at all,stress_relief
+i cant calm down,stress_relief
+i cant stop overthinking,stress_relief
+i cant switch off my mind,stress_relief
+i cant feel peaceful,stress_relief
+i cant unwind after work,stress_relief
+i cant sleep because of stress,stress_relief
+i cant focus due to stress,stress_relief
+i cant handle stress anymore,stress_relief
+i cant deal with stress today,stress_relief
+i cant manage this stress,stress_relief
+i cant escape stress,stress_relief
+i cant stop stressing,stress_relief
+i cant find calm,stress_relief
+i cant find peace,stress_relief
+i cant relax my body,stress_relief
+i cant relax my mind,stress_relief
+i cant feel relaxed,stress_relief
+i cant feel calm today,stress_relief
+i cant feel settled,stress_relief
+everything feels stressful,stress_relief
+life feels stressful,stress_relief
+work feels stressful,stress_relief
+today feels stressful,stress_relief
+this week is stressful,stress_relief
+too many thoughts in my head,stress_relief
+too much mental pressure,stress_relief
+too much emotional pressure,stress_relief
+too much responsibility stress,stress_relief
+too much work pressure,stress_relief
+too much mental load,stress_relief
+too much stress buildup,stress_relief
+pressure is overwhelming me,stress_relief
+mental pressure is high,stress_relief
+emotional pressure is high,stress_relief
+stress is affecting my peace,stress_relief
+stress is affecting my happiness,stress_relief
+stress is affecting my health,stress_relief
+stress is affecting my energy,stress_relief
+stress is affecting my mood badly,stress_relief
+stress is affecting my balance,stress_relief
+stress is affecting my calm,stress_relief
+stress is making me restless,stress_relief
+stress is making me anxious,stress_relief
+stress is making me tired,stress_relief
+stress is making me angry,stress_relief
+stress is making me frustrated,stress_relief
+stress is making me emotional,stress_relief
+stress is making me exhausted,stress_relief
+stress is making me overthink,stress_relief
+stress is making me uncomfortable,stress_relief
+stress is making me uneasy,stress_relief
+stress is making me tense,stress_relief
+stress is making my head heavy,stress_relief
+stress is making my body tight,stress_relief
+stress is making my mind restless,stress_relief
+
 
 sun salutation,sun_salutation
 surya namaskar,sun_salutation
