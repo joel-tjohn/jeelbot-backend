@@ -81,7 +81,7 @@ def is_small_talk(text):
 def is_yoga_domain(text):
     yoga_keywords = [
         "yoga", "asana", "pose", "pranayama", "meditation", "breath", 
-        "stress", "relax", "sleep", "flexibility", "sun salutation"
+        "stress", "relax", "sleep", "flexibility", "sun salutation","wellness"
     ]
     return any(word in text for word in yoga_keywords)
 
@@ -161,17 +161,41 @@ def chat():
             context["last_intent"] = None
             return jsonify({"response": "Sure 🌿 What would you like to explore next?"})
 
-    # 5. INTENT PREDICTION
+# --------------------------------------------------
+    # 🧠 5. INTENT PREDICTION & SMART FALLBACK
+    # --------------------------------------------------
     probs = model.predict_proba([message])[0]
-    if max(probs) > 0.3:  # Confidence threshold
-        intent = model.classes_[probs.argmax()]
+    confidence = max(probs)
+    intent = model.classes_[probs.argmax()]
+
+    # A: HIGH CONFIDENCE -> Use your Knowledge Base JSON
+    if confidence > 0.4 and intent != "fallback":
         if intent in knowledge_base:
             context["last_intent"] = intent
             intro = gemini_reply(message, str(knowledge_base[intent]))
+            
             return jsonify({
-                "response": f"{intro}\n\nWhat would you like to explore?\n1️⃣ Duration & Time\n2️⃣ Breathing\n3️⃣ Poses\n4️⃣ Safety Tips\n5️⃣ Another topic"
+                "response": f"{intro}\n\n"
+                            "What would you like to explore?\n"
+                            "1️⃣ Duration & Time\n"
+                            "2️⃣ Breathing\n"
+                            "3️⃣ Poses\n"
+                            "4️⃣ Safety Tips\n"
+                            "5️⃣ Another topic"
             })
 
+    # B: LOW CONFIDENCE OR FALLBACK -> SMART GEMINI FILTER
+    # This prevents the "I only answer yoga questions" error for general wellness.
+    smart_prompt = (
+        f"The user said '{raw_message}'. If this is even slightly related to "
+        "health, wellness, or yoga, give a friendly 1-sentence tip. If it is "
+        "totally random (like coding or movies), politely decline."
+    )
+    
+    # We pass the smart instruction as the 'context' to your existing function
+    ai_response = gemini_reply(raw_message, smart_prompt)
+    
+    return jsonify({"response": ai_response or "I'm here for your yoga and wellness needs! 🌿"})
     # 6. FALLBACK
     return jsonify({"response": "I'm not sure about that. Try asking about a specific yoga pose or wellness topic 🌿"})
 
