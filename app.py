@@ -92,7 +92,7 @@ def gemini_reply(prompt_text, context_data=""):
         """
         # Updated method call for google-genai
         response = client.models.generate_content(
-            model="gemini-2.0-flash", 
+            model="gemini-2.0-flash-lite", 
             contents=prompt
         )
         return response.text.strip()
