@@ -7,20 +7,23 @@ from flask_cors import CORS
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.pipeline import make_pipeline
-import google.generativeai as genai
+
+# 1. 🔑 SWITCH TO THE MODERN LIBRARY
+from google import genai
 
 # --------------------------------------------------
 # 🔑 GEMINI SETUP
 # --------------------------------------------------
-# It pulls the key safely from the variable you added to Render
-api_key = os.environ.get("AIzaSyB6LQlmgH11j6bz8PR9kDH-O633y6pisEQ")
+# Use the exact key name you set in Render's dashboard
+api_key = os.environ.get("Gemini_API_Key")
 
 if not api_key:
     print("⚠️ Error: Gemini_API_Key not found in environment!")
+    client = None
 else:
-    genai.configure(api_key=api_key)
-    # Using the latest 1.5-flash model for fast, efficient responses
-    gemini_model = genai.GenerativeModel("gemini-1.5-flash")
+    # New initialization style for the modern SDK
+    client = genai.Client(api_key=api_key)
+    print("✅ Gemini Client connected")
 
 # --------------------------------------------------
 # 🚀 FLASK APP
@@ -31,81 +34,68 @@ CORS(app)
 # --------------------------------------------------
 # 📚 LOAD KNOWLEDGE BASE & DATASET
 # --------------------------------------------------
-with open("knowledge_base.json", "r", encoding="utf-8") as f:
-    knowledge_base = json.load(f)
+# Ensure these files are in your GitHub repository!
+try:
+    with open("knowledge_base.json", "r", encoding="utf-8") as f:
+        knowledge_base = json.load(f)
 
-training_data = []
-with open("dataset.csv", "r", encoding="utf-8") as f:
-    reader = csv.reader(f)
-    next(reader)
-    for row in reader:
-        if len(row) >= 2:
-            training_data.append((row[0].lower().strip(), row[1].strip()))
+    training_data = []
+    with open("dataset.csv", "r", encoding="utf-8") as f:
+        reader = csv.reader(f)
+        next(reader)
+        for row in reader:
+            if len(row) >= 2:
+                training_data.append((row[0].lower().strip(), row[1].strip()))
 
-X_train = [x[0] for x in training_data]
-y_train = [x[1] for x in training_data]
+    X_train = [x[0] for x in training_data]
+    y_train = [x[1] for x in training_data]
 
-# --------------------------------------------------
-# 🧠 TRAIN INTENT MODEL
-# --------------------------------------------------
-model = make_pipeline(
-    CountVectorizer(ngram_range=(1, 2)),
-    LogisticRegression(max_iter=1000)
-)
-model.fit(X_train, y_train)
+    model = make_pipeline(
+        CountVectorizer(ngram_range=(1, 2)),
+        LogisticRegression(max_iter=1000)
+    )
+    model.fit(X_train, y_train)
+    print(f"✅ Loaded {len(training_data)} samples")
+except Exception as e:
+    print(f"❌ Initialization Error: {e}")
 
-print(f"✅ Loaded {len(training_data)} samples")
 print("✅ JeelBot ready")
 
 # --------------------------------------------------
-# 💾 SESSION MEMORY & HELPERS
+# 💾 HELPERS & DOMAIN FILTER
 # --------------------------------------------------
 sessions = {}
-
-def normalize_text(text):
-    return text.lower().strip()
-
-def random_from_list(items, last=None):
-    if not items: return ""
-    if last and len(items) > 1:
-        items = [i for i in items if i != last]
-    return random.choice(items)
-
-def is_greeting(text):
-    greetings = ["hi", "hello", "hey", "namaste", "morning", "evening"]
-    return any(g in text for g in greetings)
-
-def is_small_talk(text):
-    return text in ["ok", "okay", "hmm", "yes", "yeah", "cool", "fine"]
 
 def is_yoga_domain(text):
     yoga_keywords = [
         "yoga", "asana", "pose", "pranayama", "meditation", "breath", 
-        "stress", "relax", "sleep", "flexibility", "sun salutation","wellness"
+        "stress", "relax", "sleep", "flexibility", "sun salutation", "wellness"
     ]
-    return any(word in text for word in yoga_keywords)
+    return any(word in text.lower() for word in yoga_keywords)
 
 # --------------------------------------------------
-# 🤖 GEMINI ENHANCER (STRICT YOGA ONLY)
+# 🤖 GEMINI ENHANCER (MODERN SDK)
 # --------------------------------------------------
 def gemini_reply(prompt_text, context_data=""):
+    if not client:
+        return "I'm having trouble connecting to my brain right now. 🌿"
+    
     try:
-        # System prompt ensures the bot stays strictly within the yoga domain
         prompt = f"""
-You are JeelBot, an intelligent yoga and wellness assistant.
-CONTEXT INFORMATION: {context_data}
-
-Rules:
-- Only talk about yoga, meditation, breathing, sleep, or wellness.
-- If the user asks something outside these topics, politely refuse.
-- Use the CONTEXT INFORMATION to provide accurate details.
-- Keep responses short (1–2 sentences) and supportive.
-- Do not mention you are an AI.
-
-User message: {prompt_text}
-"""
-        response = gemini_model.generate_content(prompt)
-        return response.text.strip() if response.text else ""
+        You are JeelBot, an intelligent yoga and wellness assistant.
+        CONTEXT: {context_data}
+        Rules:
+        - Only talk about yoga, meditation, breathing, sleep, or wellness.
+        - Short responses (1–2 sentences).
+        - No mention of being an AI.
+        User: {prompt_text}
+        """
+        # Updated method call for google-genai
+        response = client.models.generate_content(
+            model="gemini-2.0-flash", 
+            contents=prompt
+        )
+        return response.text.strip()
     except Exception as e:
         print(f"❌ Gemini Error: {e}")
         return ""
@@ -118,88 +108,46 @@ def chat():
     data = request.json or {}
     raw_message = data.get("message", "")
     session_id = data.get("session_id", "default")
-
-    message = normalize_text(raw_message)
-
+    
     if session_id not in sessions:
-        sessions[session_id] = {"last_intent": None, "last_reply": None}
-
-    context = sessions[session_id]
-
-    # 1. GREETING
-    if is_greeting(message):
-        base = random_from_list(knowledge_base["greeting"]["responses"], context.get("last_reply"))
-        follow = gemini_reply("Add a friendly yoga-related follow-up question")
-        reply = f"{base}\n{follow}" if follow else base
-        context["last_reply"] = base
-        return jsonify({"response": reply})
-
-    # 2. STRICT DOMAIN FILTER
-    if not is_yoga_domain(message) and not message.isdigit():
-        return jsonify({"response": "I’m JeelBot 🌿 I only answer yoga and wellness questions."})
-
-    # 3. SMALL TALK
-    if is_small_talk(message):
-        follow = gemini_reply("Respond casually within yoga context", "Keep it very brief.")
-        return jsonify({"response": follow or "Alright 🌿"})
-
-    # 4. FOLLOW-UP OPTIONS (Numeric menu)
-    if context.get("last_intent") and message in ["1", "2", "3", "4", "5"]:
-        intent = context["last_intent"]
+        sessions[session_id] = {"last_intent": None}
+    
+    # 1. Check if user is asking for a specific menu item (1-5)
+    if raw_message.strip() in ["1", "2", "3", "4", "5"] and sessions[session_id].get("last_intent"):
+        intent = sessions[session_id]["last_intent"]
         info = knowledge_base.get(intent, {})
-        if message == "1":
-            return jsonify({"response": f"⏰ Duration: {info.get('duration')}\n🕒 Best time: {info.get('best_time')}"})
-        if message == "2":
-            return jsonify({"response": "🌬️ Breathing:\n• " + "\n• ".join(info.get("breathing", []))})
-        if message == "3":
-            poses = ", ".join(info.get("poses", []))
-            ai_desc = gemini_reply(f"Briefly describe benefits of: {poses}")
-            return jsonify({"response": f"🧘 Poses:\n• " + "\n• ".join(info.get("poses", [])) + f"\n\n{ai_desc}"})
-        if message == "4":
-            return jsonify({"response": "⚠️ Safety Tips:\n• " + "\n• ".join(info.get("tips", []))})
-        if message == "5":
-            context["last_intent"] = None
-            return jsonify({"response": "Sure 🌿 What would you like to explore next?"})
+        
+        responses = {
+            "1": f"⏰ Duration: {info.get('duration')}\n🕒 Best time: {info.get('best_time')}",
+            "2": f"🌬️ Breathing:\n• " + "\n• ".join(info.get("breathing", [])),
+            "3": f"🧘 Poses:\n• " + "\n• ".join(info.get("poses", [])),
+            "4": f"⚠️ Safety Tips:\n• " + "\n• ".join(info.get("tips", [])),
+            "5": "Sure 🌿 What else can I help with?"
+        }
+        
+        if raw_message.strip() == "5": sessions[session_id]["last_intent"] = None
+        return jsonify({"response": responses.get(raw_message.strip())})
 
-# --------------------------------------------------
-    # 🧠 5. INTENT PREDICTION & SMART FALLBACK
-    # --------------------------------------------------
-    probs = model.predict_proba([message])[0]
+    # 2. General Yoga Check
+    if not is_yoga_domain(raw_message):
+        return jsonify({"response": "I’m JeelBot 🌿 I specialize in yoga and wellness. Ask me about poses or stress relief!"})
+
+    # 3. Predict Intent
+    probs = model.predict_proba([raw_message.lower().strip()])[0]
     confidence = max(probs)
     intent = model.classes_[probs.argmax()]
 
-    # A: HIGH CONFIDENCE -> Use your Knowledge Base JSON
-    if confidence > 0.4 and intent != "fallback":
-        if intent in knowledge_base:
-            context["last_intent"] = intent
-            intro = gemini_reply(message, str(knowledge_base[intent]))
-            
-            return jsonify({
-                "response": f"{intro}\n\n"
-                            "What would you like to explore?\n"
-                            "1️⃣ Duration & Time\n"
-                            "2️⃣ Breathing\n"
-                            "3️⃣ Poses\n"
-                            "4️⃣ Safety Tips\n"
-                            "5️⃣ Another topic"
-            })
+    if confidence > 0.4 and intent in knowledge_base:
+        sessions[session_id]["last_intent"] = intent
+        intro = gemini_reply(raw_message, str(knowledge_base[intent]))
+        return jsonify({
+            "response": f"{intro}\n\nExplore more:\n1️⃣ Time\n2️⃣ Breathing\n3️⃣ Poses\n4️⃣ Safety\n5️⃣ New Topic"
+        })
 
-    # B: LOW CONFIDENCE OR FALLBACK -> SMART GEMINI FILTER
-    # This prevents the "I only answer yoga questions" error for general wellness.
-    smart_prompt = (
-        f"The user said '{raw_message}'. If this is even slightly related to "
-        "health, wellness, or yoga, give a friendly 1-sentence tip. If it is "
-        "totally random (like coding or movies), politely decline."
-    )
-    
-    # We pass the smart instruction as the 'context' to your existing function
-    ai_response = gemini_reply(raw_message, smart_prompt)
-    
-    return jsonify({"response": ai_response or "I'm here for your yoga and wellness needs! 🌿"})
-    # 6. FALLBACK
-    return jsonify({"response": "I'm not sure about that. Try asking about a specific yoga pose or wellness topic 🌿"})
+    # 4. Fallback to Gemini
+    ai_response = gemini_reply(raw_message)
+    return jsonify({"response": ai_response or "I'm here for your wellness needs! 🌿"})
 
 if __name__ == "__main__":
-    # Get port from environment for Render deployment
-    port = int(os.environ.get("PORT", 5000))
+    port = int(os.environ.get("PORT", 10000))
     app.run(host="0.0.0.0", port=port)
